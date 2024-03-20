@@ -1,0 +1,131 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: #5372f0;
+}
+
+.header{
+    color:white;
+    font-size: 50px;
+}
+
+.container {
+    width: 700px;
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.wrapper {
+    border-radius: 5px;
+    border: 1px solid #bbb;
+}
+
+.wrapper .text-input {
+    display: flex;
+    border-bottom: 1px solid #bbb;
+}
+
+.text-input .to-text {
+    border-left: 1px solid #bbb;
+}
+
+.text-input textarea {
+    height: 250px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background: none;
+    padding: 20px;
+    resize: none;
+}
+
+.controls li,
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.controls {
+    display: flex;
+    list-style: none;
+    padding: 12px 15px;
+    justify-content: space-between;
+}
+
+.controls .row.from .icons {
+    border-right: 1px solid #bbb;
+    padding-right: 10px;
+}
+
+.controls .row.to .icons {
+    border-left: 1px solid #bbb;
+    padding-left: 10px;
+}
+
+.controls .icons {
+    width: 38%;
+}
+
+.controls .icons i {
+    width: 50px;
+    color: rgb(107, 103, 103);
+    cursor: pointer;
+}
+
+.controls .row select {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background: none;
+}
+
+.controls .exchange {
+    font-size: 16px;
+}
+
+.container button {
+    width: 100%;
+    padding: 14px;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 17px;
+    border-radius: 5px;
+    background: #5372F0;
+}
+
+button:active {
+    transform: scale(.95) translateY(5px);
+    filter: brightness(.9);
+}
+
+#from:active{
+    transform: scale(.95) translateY(5px);
+    filter: brightness(.9);
+}
+
+#to:active{
+    transform: scale(.95) translateY(5px);
+    filter: brightness(.9);
+}
+
+.exchange:active{
+    transform: scale(.95) translateY(5px);
+    filter: brightness(.9);
+}
